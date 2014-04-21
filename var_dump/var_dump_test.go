@@ -15,14 +15,14 @@ type TestStruct struct {
 func TestVarDumpExport(t *testing.T) {
   foo := "foo"
   data := TestStruct{
-    Key: 12345,
-    PublicAttribute: []string{"hoge", "piyo"},
+    Key:               12345,
+    PublicAttribute:   []string{"hoge", "piyo"},
     private_attribute: &foo,
     Child: &TestStruct{
-      Key: 23456,
-      PublicAttribute: []string{},
+      Key:               23456,
+      PublicAttribute:   []string{},
       private_attribute: nil,
-      Child: nil,
+      Child:             nil,
     },
   }
   actual := var_dump.Export(data)
