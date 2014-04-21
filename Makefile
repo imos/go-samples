@@ -1,4 +1,4 @@
-libraries = exec
+libraries = exec var_dump
 
 .PHONY: all/% format/% test/%
 
